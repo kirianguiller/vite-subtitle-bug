@@ -92,12 +92,8 @@ npm
 ### Logs
 
 ```shell
-vite:config bundled config file loaded in 169.28ms +0ms
+vite:config bundled config file loaded in 157.27ms +0ms
   vite:config using resolved config: {
-  vite:config   resolve: {
-  vite:config     dedupe: [ 'react', 'react-dom' ],
-  vite:config     alias: [ [Object], [Object], [Object], [Object] ]
-  vite:config   },
   vite:config   plugins: [
   vite:config     'vite:pre-alias',
   vite:config     'alias',
@@ -113,19 +109,18 @@ vite:config bundled config file loaded in 169.28ms +0ms
   vite:config     'vite:wasm',
   vite:config     'vite:worker',
   vite:config     'vite:asset',
-  vite:config     'node-resolve',
-  vite:config     'node-resolve',
   vite:config     'vite:define',
   vite:config     'vite:css-post',
   vite:config     'vite:client-inject',
   vite:config     'vite:import-analysis'
   vite:config   ],
   vite:config   server: { fs: { strict: undefined, allow: [Array] } },
+  vite:config   resolve: { dedupe: [ 'react', 'react-dom' ], alias: [ [Object], [Object] ] },
   vite:config   optimizeDeps: {
   vite:config     include: [ 'react/jsx-dev-runtime' ],
   vite:config     esbuildOptions: { keepNames: undefined, preserveSymlinks: undefined }
   vite:config   },
-  vite:config   configFile: '/home/wenjia/Projects/to_delete/my-vue-app/vite.config.ts',
+  vite:config   configFile: '/home/wenjia/Projects/to_delete/my-react-app/vite.config.ts',
   vite:config   configFileDependencies: [ 'vite.config.ts' ],
   vite:config   inlineConfig: {
   vite:config     root: undefined,
@@ -136,10 +131,10 @@ vite:config bundled config file loaded in 169.28ms +0ms
   vite:config     clearScreen: undefined,
   vite:config     server: { fs: [Object] }
   vite:config   },
-  vite:config   root: '/home/wenjia/Projects/to_delete/my-vue-app',
+  vite:config   root: '/home/wenjia/Projects/to_delete/my-react-app',
   vite:config   base: '/',
-  vite:config   publicDir: '/home/wenjia/Projects/to_delete/my-vue-app/public',
-  vite:config   cacheDir: '/home/wenjia/Projects/to_delete/my-vue-app/node_modules/.vite',
+  vite:config   publicDir: '/home/wenjia/Projects/to_delete/my-react-app/public',
+  vite:config   cacheDir: '/home/wenjia/Projects/to_delete/my-react-app/node_modules/.vite',
   vite:config   command: 'serve',
   vite:config   mode: 'development',
   vite:config   isProduction: false,
@@ -181,67 +176,67 @@ vite:config bundled config file loaded in 169.28ms +0ms
   vite:config   createResolver: [Function: createResolver]
   vite:config } +8ms
   vite:deps Crawling dependencies using entries:
-  vite:deps   /home/wenjia/Projects/to_delete/my-vue-app/index.html +0ms
-  vite:resolve 1.18ms /src/main.tsx -> /home/wenjia/Projects/to_delete/my-vue-app/src/main.tsx +0ms
-  vite:resolve 3.98ms react -> /home/wenjia/Projects/to_delete/my-vue-app/node_modules/react/index.js +8ms
-  vite:resolve 1.44ms react-dom -> /home/wenjia/Projects/to_delete/my-vue-app/node_modules/react-dom/index.js +4ms
-  vite:resolve 0.60ms ./App -> /home/wenjia/Projects/to_delete/my-vue-app/src/App.tsx +4ms
-  vite:resolve 1.51ms subtitle -> /home/wenjia/Projects/to_delete/my-vue-app/node_modules/subtitle/dist/subtitle.esm.js +6ms
-  vite:deps Scan completed in 77.05ms: {
-  react: '/home/wenjia/Projects/to_delete/my-vue-app/node_modules/react/index.js',
-  'react-dom': '/home/wenjia/Projects/to_delete/my-vue-app/node_modules/react-dom/index.js',
-  subtitle: '/home/wenjia/Projects/to_delete/my-vue-app/node_modules/subtitle/dist/subtitle.esm.js'
-} +60ms
-  vite:resolve 0.92ms react/jsx-dev-runtime -> /home/wenjia/Projects/to_delete/my-vue-app/node_modules/react/jsx-dev-runtime.js +0ms
+  vite:deps   /home/wenjia/Projects/to_delete/my-react-app/index.html +0ms
+  vite:resolve 0.87ms /src/main.tsx -> /home/wenjia/Projects/to_delete/my-react-app/src/main.tsx +0ms
+  vite:resolve 3.85ms react -> /home/wenjia/Projects/to_delete/my-react-app/node_modules/react/index.js +11ms
+  vite:resolve 1.59ms react-dom -> /home/wenjia/Projects/to_delete/my-react-app/node_modules/react-dom/index.js +4ms
+  vite:resolve 0.78ms ./App -> /home/wenjia/Projects/to_delete/my-react-app/src/App.tsx +4ms
+  vite:resolve 1.61ms subtitle -> /home/wenjia/Projects/to_delete/my-react-app/node_modules/subtitle/dist/subtitle.esm.js +6ms
+  vite:deps Scan completed in 77.13ms: {
+  react: '/home/wenjia/Projects/to_delete/my-react-app/node_modules/react/index.js',
+  'react-dom': '/home/wenjia/Projects/to_delete/my-react-app/node_modules/react-dom/index.js',
+  subtitle: '/home/wenjia/Projects/to_delete/my-react-app/node_modules/subtitle/dist/subtitle.esm.js'
+} +47ms
+  vite:resolve 1.21ms react/jsx-dev-runtime -> /home/wenjia/Projects/to_delete/my-react-app/node_modules/react/jsx-dev-runtime.js +0ms
 Pre-bundling dependencies:
   react
   react-dom
   subtitle
   react/jsx-dev-runtime
 (this will be run only when your dependencies or config have changed)
-  vite:resolve 1.01ms stream -> __vite-browser-external:stream +0ms
-  vite:resolve 1.52ms multipipe -> /home/wenjia/Projects/to_delete/my-vue-app/node_modules/multipipe/index.js +2ms
-  vite:resolve 0.20ms react -> /home/wenjia/Projects/to_delete/my-vue-app/node_modules/react/index.js +0ms
-  vite:resolve 1.70ms split2 -> /home/wenjia/Projects/to_delete/my-vue-app/node_modules/split2/index.js +6ms
-  vite:resolve 1.61ms object-assign -> /home/wenjia/Projects/to_delete/my-vue-app/node_modules/object-assign/index.js +5ms
-  vite:resolve 2.13ms strip-bom -> /home/wenjia/Projects/to_delete/my-vue-app/node_modules/strip-bom/index.js +5ms
-  vite:resolve 1.23ms duplexer2 -> /home/wenjia/Projects/to_delete/my-vue-app/node_modules/duplexer2/index.js +7ms
-  vite:resolve 1.85ms readable-stream -> /home/wenjia/Projects/to_delete/my-vue-app/node_modules/split2/node_modules/readable-stream/readable-browser.js +3ms
-  vite:resolve 1.15ms stream -> __vite-browser-external:stream +2ms
-  vite:resolve 1.75ms string_decoder -> /home/wenjia/Projects/to_delete/my-vue-app/node_modules/string_decoder/lib/string_decoder.js +3ms
-  vite:resolve 1.79ms readable-stream -> /home/wenjia/Projects/to_delete/my-vue-app/node_modules/readable-stream/readable-browser.js +2ms
-  vite:resolve 2.36ms safe-buffer -> /home/wenjia/Projects/to_delete/my-vue-app/node_modules/safe-buffer/index.js +3ms
-  vite:resolve 2.37ms inherits -> /home/wenjia/Projects/to_delete/my-vue-app/node_modules/inherits/inherits_browser.js +1ms
-  vite:resolve 1.50ms util-deprecate -> /home/wenjia/Projects/to_delete/my-vue-app/node_modules/util-deprecate/browser.js +2ms
-  vite:resolve 2.82ms process-nextick-args -> /home/wenjia/Projects/to_delete/my-vue-app/node_modules/process-nextick-args/index.js +4ms
-  vite:resolve 2.86ms core-util-is -> /home/wenjia/Projects/to_delete/my-vue-app/node_modules/core-util-is/lib/util.js +0ms
-  vite:resolve 1.78ms buffer -> __vite-browser-external:buffer +3ms
-  vite:resolve 1.86ms events -> __vite-browser-external:events +0ms
-  vite:resolve 1.82ms isarray -> /home/wenjia/Projects/to_delete/my-vue-app/node_modules/isarray/index.js +6ms
-  vite:resolve 1.11ms util -> __vite-browser-external:util +4ms
-  vite:resolve 1.34ms string_decoder/ -> /home/wenjia/Projects/to_delete/my-vue-app/node_modules/string_decoder/lib/string_decoder.js +7ms
-  vite:resolve 1.16ms scheduler -> /home/wenjia/Projects/to_delete/my-vue-app/node_modules/scheduler/index.js +33ms
-  vite:resolve 0.50ms scheduler/tracing -> /home/wenjia/Projects/to_delete/my-vue-app/node_modules/scheduler/tracing.js +2ms
+  vite:resolve 1.02ms stream -> __vite-browser-external:stream +0ms
+  vite:resolve 1.34ms multipipe -> /home/wenjia/Projects/to_delete/my-react-app/node_modules/multipipe/index.js +3ms
+  vite:resolve 1.48ms split2 -> /home/wenjia/Projects/to_delete/my-react-app/node_modules/split2/index.js +2ms
+  vite:resolve 0.23ms react -> /home/wenjia/Projects/to_delete/my-react-app/node_modules/react/index.js +0ms
+  vite:resolve 1.31ms strip-bom -> /home/wenjia/Projects/to_delete/my-react-app/node_modules/strip-bom/index.js +4ms
+  vite:resolve 1.52ms object-assign -> /home/wenjia/Projects/to_delete/my-react-app/node_modules/object-assign/index.js +5ms
+  vite:resolve 1.75ms readable-stream -> /home/wenjia/Projects/to_delete/my-react-app/node_modules/split2/node_modules/readable-stream/readable-browser.js +3ms
+  vite:resolve 1.20ms duplexer2 -> /home/wenjia/Projects/to_delete/my-react-app/node_modules/duplexer2/index.js +1ms
+  vite:resolve 1.18ms string_decoder -> /home/wenjia/Projects/to_delete/my-react-app/node_modules/string_decoder/lib/string_decoder.js +2ms
+  vite:resolve 0.84ms stream -> __vite-browser-external:stream +2ms
+  vite:resolve 1.32ms safe-buffer -> /home/wenjia/Projects/to_delete/my-react-app/node_modules/safe-buffer/index.js +2ms
+  vite:resolve 2.08ms inherits -> /home/wenjia/Projects/to_delete/my-react-app/node_modules/inherits/inherits_browser.js +3ms
+  vite:resolve 2.55ms readable-stream -> /home/wenjia/Projects/to_delete/my-react-app/node_modules/readable-stream/readable-browser.js +4ms
+  vite:resolve 2.69ms buffer -> __vite-browser-external:buffer +0ms
+  vite:resolve 1.87ms util-deprecate -> /home/wenjia/Projects/to_delete/my-react-app/node_modules/util-deprecate/browser.js +3ms
+  vite:resolve 1.32ms events -> __vite-browser-external:events +2ms
+  vite:resolve 2.10ms process-nextick-args -> /home/wenjia/Projects/to_delete/my-react-app/node_modules/process-nextick-args/index.js +3ms
+  vite:resolve 2.12ms core-util-is -> /home/wenjia/Projects/to_delete/my-react-app/node_modules/core-util-is/lib/util.js +4ms
+  vite:resolve 3.57ms isarray -> /home/wenjia/Projects/to_delete/my-react-app/node_modules/isarray/index.js +4ms
+  vite:resolve 3.51ms util -> __vite-browser-external:util +1ms
+  vite:resolve 1.73ms string_decoder/ -> /home/wenjia/Projects/to_delete/my-react-app/node_modules/string_decoder/lib/string_decoder.js +9ms
+  vite:resolve 1.53ms scheduler -> /home/wenjia/Projects/to_delete/my-react-app/node_modules/scheduler/index.js +33ms
+  vite:resolve 1.01ms scheduler/tracing -> /home/wenjia/Projects/to_delete/my-react-app/node_modules/scheduler/tracing.js +3ms
  > node_modules/subtitle/dist/subtitle.esm.js:1:9: error: No matching export in "browser-external:stream" for import "Duplex"
-    1 │ import { Duplex, Transform } from 's...
-      ╵          ~~~~~~
+    1 │ ... Duplex,...
+      ╵     ~~~~~~
 
  > node_modules/subtitle/dist/subtitle.esm.js:1:17: error: No matching export in "browser-external:stream" for import "Transform"
-    1 │ ...t { Duplex, Transform } from 'str...
-      ╵                ~~~~~~~~~
+    1 │ ...Transfor...
+      ╵    ~~~~~~~~
 
 error when starting dev server:
 Error: Build failed with 2 errors:
 node_modules/subtitle/dist/subtitle.esm.js:1:9: error: No matching export in "browser-external:stream" for import "Duplex"
 node_modules/subtitle/dist/subtitle.esm.js:1:17: error: No matching export in "browser-external:stream" for import "Transform"
-    at failureErrorWithLog (/home/wenjia/Projects/to_delete/my-vue-app/node_modules/esbuild/lib/main.js:1493:15)
-    at /home/wenjia/Projects/to_delete/my-vue-app/node_modules/esbuild/lib/main.js:1151:28
-    at runOnEndCallbacks (/home/wenjia/Projects/to_delete/my-vue-app/node_modules/esbuild/lib/main.js:941:63)
-    at buildResponseToResult (/home/wenjia/Projects/to_delete/my-vue-app/node_modules/esbuild/lib/main.js:1149:7)
-    at /home/wenjia/Projects/to_delete/my-vue-app/node_modules/esbuild/lib/main.js:1258:14
-    at /home/wenjia/Projects/to_delete/my-vue-app/node_modules/esbuild/lib/main.js:629:9
-    at handleIncomingPacket (/home/wenjia/Projects/to_delete/my-vue-app/node_modules/esbuild/lib/main.js:726:9)
-    at Socket.readFromStdout (/home/wenjia/Projects/to_delete/my-vue-app/node_modules/esbuild/lib/main.js:596:7)
+    at failureErrorWithLog (/home/wenjia/Projects/to_delete/my-react-app/node_modules/esbuild/lib/main.js:1493:15)
+    at /home/wenjia/Projects/to_delete/my-react-app/node_modules/esbuild/lib/main.js:1151:28
+    at runOnEndCallbacks (/home/wenjia/Projects/to_delete/my-react-app/node_modules/esbuild/lib/main.js:941:63)
+    at buildResponseToResult (/home/wenjia/Projects/to_delete/my-react-app/node_modules/esbuild/lib/main.js:1149:7)
+    at /home/wenjia/Projects/to_delete/my-react-app/node_modules/esbuild/lib/main.js:1258:14
+    at /home/wenjia/Projects/to_delete/my-react-app/node_modules/esbuild/lib/main.js:629:9
+    at handleIncomingPacket (/home/wenjia/Projects/to_delete/my-react-app/node_modules/esbuild/lib/main.js:726:9)
+    at Socket.readFromStdout (/home/wenjia/Projects/to_delete/my-react-app/node_modules/esbuild/lib/main.js:596:7)
     at Socket.emit (events.js:400:28)
     at addChunk (internal/streams/readable.js:293:12)
 ```
